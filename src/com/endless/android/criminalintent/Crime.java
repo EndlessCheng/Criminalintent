@@ -7,8 +7,7 @@ public class Crime {
 	private String mTitle;
 
 	public Crime() {
-		// 生成唯一标识符
-		mId = UUID.randomUUID();
+		mId = UUID.randomUUID(); // 生成唯一标识符
 	}
 
 	public UUID getId() {
