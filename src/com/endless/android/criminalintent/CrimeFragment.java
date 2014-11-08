@@ -23,8 +23,8 @@ public class CrimeFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup parent,
 			Bundle savedInstanceState) {
 		View v = inflater.inflate(R.layout.fragment_crime, parent, false);
-		// false：在 activity 中手动添加视图
-
+		// false：在 activity 中手动添加视图，而不是自动添加给父视图
+		
 		mTitleField = (EditText) v.findViewById(R.id.crime_title);
 		mTitleField.addTextChangedListener(new TextWatcher() {
 
@@ -47,7 +47,7 @@ public class CrimeFragment extends Fragment {
 
 			}
 		});
-
+		
 		return v;
 	}
 }
