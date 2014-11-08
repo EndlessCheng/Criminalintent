@@ -1,5 +1,6 @@
 package com.endless.android.criminalintent;
 
+import java.text.SimpleDateFormat;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.text.Editable;
@@ -55,7 +56,8 @@ public class CrimeFragment extends Fragment {
 		});
 
 		mDateButton = (Button) v.findViewById(R.id.crime_date);
-		mDateButton.setText(mCrime.getDate().toString());
+		mDateButton.setText(new SimpleDateFormat("yyyy年MM月dd日 HH时mm分ss秒 E")
+				.format(mCrime.getDate()));
 		mDateButton.setEnabled(false);
 
 		mSolvedCheckBox = (CheckBox) v.findViewById(R.id.crime_solved);
