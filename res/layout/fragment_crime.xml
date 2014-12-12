@@ -39,25 +39,10 @@
         android:layout_marginRight="16dp"
         android:text="@string/crime_solved_label" />
 
-    <!-- <SlidingDrawer -->
-    <!-- android:id="@+id/drawer" -->
-    <!-- android:layout_width="fill_parent" -->
-    <!-- android:layout_height="fill_parent" -->
-    <!-- android:content="@+id/content" -->
-    <!-- android:handle="@+id/handle" -->
-    <!-- android:orientation="horizontal" > -->
-
     <AnalogClock
         android:id="@+id/analog_clock"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#66CCFF" />
-
-    <!-- <ImageView -->
-    <!-- android:id="@+id/handle" -->
-    <!-- android:layout_width="48dip" -->
-    <!-- android:layout_height="48dip" -->
-    <!-- android:src="@drawable-hdpi/ic_launcher" /> -->
-    <!-- </SlidingDrawer> -->
 
 </LinearLayout>

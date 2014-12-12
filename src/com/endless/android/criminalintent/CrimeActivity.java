@@ -24,5 +24,4 @@ public class CrimeActivity extends Activity {
 					.commit();
 		}
 	}
-
 }
