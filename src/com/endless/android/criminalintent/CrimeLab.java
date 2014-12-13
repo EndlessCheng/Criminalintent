@@ -1,8 +1,8 @@
+package com.endless.android.criminalintent;
+
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.UUID;
-
-import com.endless.android.criminalintent.Crime;
 
 import android.content.Context;
 
@@ -10,7 +10,7 @@ import android.content.Context;
  * 单例
  */
 public class CrimeLab {
-	private ArrayList<Crime> mCrimes;
+	private ArrayList<Crime> mCrimes; // set 或许会更好
 
 	private static CrimeLab sCrimeLab;
 	private Context mAppContext;

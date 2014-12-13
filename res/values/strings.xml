@@ -8,5 +8,6 @@
     <string name="crime_title_label">标题</string>
     <string name="crime_details_label">犯罪细节</string>
     <string name="crime_solved_label">OK 了？</string>
+    <string name="crimes_title">犯罪条目</string>
 
 </resources>

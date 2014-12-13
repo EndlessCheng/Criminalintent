@@ -2,13 +2,10 @@ package com.endless.android.criminalintent;
 
 import android.app.Fragment;
 
-/**
- * ÍÐ¹Ü UI fragment
- */
-public class CrimeActivity extends SingleFragmentActivity {
+public class CrimeListActivity extends SingleFragmentActivity {
 
 	@Override
 	protected Fragment createFragment() {
-		return new CrimeFragment();
+		return new CrimeListFragment();
 	}
 }
