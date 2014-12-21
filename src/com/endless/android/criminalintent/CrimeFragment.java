@@ -3,7 +3,7 @@ package com.endless.android.criminalintent;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 import java.util.UUID;
-
+ 
 import android.app.Fragment;
 import android.os.Bundle;
 import android.text.Editable;
@@ -19,7 +19,7 @@ import android.widget.EditText;
 
 public class CrimeFragment extends Fragment {
 	public static final String EXTRA_CRIME_ID = "com.endless.android.criminalintent.crime_id";
-
+ 
 	private Crime mCrime;
 	private EditText mTitleField;
 	private Button mDateButton;
@@ -37,7 +37,7 @@ public class CrimeFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup parent,
 			Bundle savedInstanceState) {
 		View v = inflater.inflate(R.layout.fragment_crime, parent, false);
-		// false£ºÔÚ activity ÖĞÊÖ¶¯Ìí¼ÓÊÓÍ¼£¬¶ø²»ÊÇ×Ô¶¯Ìí¼Ó¸ø¸¸ÊÓÍ¼
+		// falseï¼šåœ¨ activity ä¸­æ‰‹åŠ¨æ·»åŠ è§†å›¾ï¼Œè€Œä¸æ˜¯è‡ªåŠ¨æ·»åŠ ç»™çˆ¶è§†å›¾
 
 		mTitleField = (EditText) v.findViewById(R.id.crime_title);
 		mTitleField.setText(mCrime.getTitle());
@@ -47,7 +47,7 @@ public class CrimeFragment extends Fragment {
 			public void onTextChanged(CharSequence s, int start, int before,
 					int count) {
 				mCrime.setTitle(s.toString());
-			}
+			} 
 
 			@Override
 			public void beforeTextChanged(CharSequence s, int start, int count,
@@ -76,7 +76,7 @@ public class CrimeFragment extends Fragment {
 					@Override
 					public void onCheckedChanged(CompoundButton buttonView,
 							boolean isChecked) {
-						mCrime.setSolved(isChecked);
+					 	 mCrime.setSolved(isChecked);
 					}
 
 				});
